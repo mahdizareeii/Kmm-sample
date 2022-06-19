@@ -1,0 +1,47 @@
+[versions]
+koin_version = "3.2.0"
+plugin_android_version = "7.2.1"
+plugin_kotlin_version = "1.7.0"
+kotlinx_coroutines_version = "1.6.1"
+ktor_version = "2.0.2"
+appcompat_version = "1.4.2"
+constraintlayout_version = "2.1.4"
+material_version = "1.6.1"
+kotlinx_serialization_version = "1.3.3"
+
+[libraries]
+#plugins
+plugin-android = { module = "com.android.tools.build:gradle", version.ref = "plugin_android_version" }
+plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "plugin_kotlin_version" }
+plugin-buildkonfig = { module = "com.codingfeline.buildkonfig:buildkonfig-gradle-plugin", version.ref = "plugin_kotlin_version" }
+
+#jetbrains
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx_serialization_version" }
+
+#androidx
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat_version" }
+androidx-constariantlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout_version" }
+android-material = { module = "com.google.android.material:material", version.ref = "material_version" }
+
+#koin
+koin-kotlin-core = { module = "io.insert-koin:koin-core", version.ref = "koin_version" }
+koin-kotlin-android = { module = "io.insert-koin:koin-android", version.ref = "koin_version" }
+
+#coroutines
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx_coroutines_version" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx_coroutines_version" }
+
+#ktor
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor_version" }
+ktor-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor_version" }
+ktor-serialization-kotlinx = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor_version" }
+ktor-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor_version" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor_version" }
+ktor-ios = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor_version" }
+
+
+[bundles]
+
+
+
+[plugins]
