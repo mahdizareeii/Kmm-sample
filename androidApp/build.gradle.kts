@@ -13,6 +13,10 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
+    buildFeatures {
+        // Enables Jetpack Compose for this module
+        compose = true
+    }
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -28,4 +32,10 @@ dependencies {
     implementation(libs.androidx.constariantlayout)
     implementation(libs.koin.kotlin.core)
     implementation(libs.koin.kotlin.android)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.material)
+    implementation(libs.androidx.compose.animation)
+    implementation(libs.androidx.compose.uitooling)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 }
