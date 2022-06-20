@@ -1,7 +1,6 @@
 package com.kmm.myapplication.android
 
 import android.app.Application
-import com.kmm.myapplication.di.commonDi
 import org.koin.core.context.startKoin
 
 class App : Application() {
@@ -9,7 +8,7 @@ class App : Application() {
         super.onCreate()
         startKoin {
             modules(
-                commonDi
+                com.kmm.core.di.coreModule
             )
         }
     }

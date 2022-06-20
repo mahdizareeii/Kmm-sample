@@ -26,7 +26,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":shared"))
+    implementation(project(":shared:core"))
+    implementation(project(":shared:domain"))
     implementation(libs.android.material)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constariantlayout)
@@ -37,5 +38,7 @@ dependencies {
     implementation(libs.androidx.compose.material)
     implementation(libs.androidx.compose.animation)
     implementation(libs.androidx.compose.uitooling)
+    implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.savedstate)
 }
