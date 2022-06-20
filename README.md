@@ -14,7 +14,7 @@ Kotlin Multiplatform Mobile (KMM) sample project
          ┌────────────▼───────────────────────────▼────────────┐
          │                        Shared                       │
          │ ┌─────────────────────────────────────────────────┐ │
-         │ │Android Domain  │  Common Domain  │  Ios Domain  │ │
+         │ │ Android Domain  │ Common Domain  │  Ios Domain  │ │
          │ └────────────────────────┬────────────────────────┘ │  
          │                          |                          |
          │                    ┌─────▼─────┐                    │
