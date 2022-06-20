@@ -45,6 +45,12 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(libs.ktor.okhttp)
+                implementation(libs.androidx.activity)
+                implementation(libs.androidx.activity.compose)
+                implementation(libs.androidx.compose.material)
+                implementation(libs.androidx.compose.animation)
+                implementation(libs.androidx.compose.uitooling)
+                implementation(libs.androidx.lifecycle.viewmodel.compose)
             }
         }
         val androidTest by getting
