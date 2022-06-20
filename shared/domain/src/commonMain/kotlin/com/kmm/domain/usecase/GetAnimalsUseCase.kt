@@ -4,10 +4,11 @@ import com.kmm.domain.UiDataState
 import com.kmm.domain.model.Animal
 import com.kmm.network.NetworkDataState
 import com.kmm.network.model.AnimalDto
+import com.kmm.repository.AnimalRepository
 import kotlinx.coroutines.flow.flow
 
 class GetAnimalsUseCase(
-    private val animalRepository: com.kmm.repository.AnimalRepository
+    private val animalRepository: AnimalRepository
 ) {
     suspend operator fun invoke() = flow<UiDataState<List<Animal>>> {
         emit(UiDataState.Loading(true))

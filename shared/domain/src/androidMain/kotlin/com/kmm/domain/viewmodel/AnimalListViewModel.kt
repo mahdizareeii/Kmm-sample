@@ -10,11 +10,10 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
-import org.koin.android.ext.android.inject
+import org.koin.java.KoinJavaComponent.inject
 
 actual class AnimalListViewModel actual constructor() : ViewModel() {
-
-    private val getAnimalsUseCase by inject<GetAnimalsUseCase>()
+    actual val getAnimalsUseCase: GetAnimalsUseCase by inject(GetAnimalsUseCase::class.java)
 
     private val _loading: MutableStateFlow<Boolean> = MutableStateFlow(false)
     val loading: Flow<Boolean> get() = _loading

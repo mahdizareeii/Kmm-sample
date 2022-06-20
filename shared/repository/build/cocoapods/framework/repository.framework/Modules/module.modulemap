@@ -1,6 +1,0 @@
-framework module repository {
-  umbrella header "placeholder.h"
-
-  export *
-  module * { export * }
-}

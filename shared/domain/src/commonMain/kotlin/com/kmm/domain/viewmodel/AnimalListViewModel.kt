@@ -1,3 +1,7 @@
 package com.kmm.domain.viewmodel
 
-expect class AnimalListViewModel()
+import com.kmm.domain.usecase.GetAnimalsUseCase
+
+expect class AnimalListViewModel(){
+    val getAnimalsUseCase: GetAnimalsUseCase
+}
