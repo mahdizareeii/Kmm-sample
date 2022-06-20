@@ -26,7 +26,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":shared:core"))
     implementation(project(":shared:domain"))
     implementation(libs.android.material)
     implementation(libs.androidx.appcompat)

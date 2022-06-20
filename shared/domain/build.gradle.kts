@@ -25,7 +25,6 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":shared:core"))
                 implementation(project(":shared:network"))
                 implementation(project(":shared:repository"))
                 implementation(libs.kotlinx.coroutines.core)

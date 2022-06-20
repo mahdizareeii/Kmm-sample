@@ -414,9 +414,6 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
-color triangle_color
-color vector_tint_color
-color vector_tint_theme_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -884,8 +881,6 @@ string abc_toolbar_collapse_description
 string close_drawer
 string close_sheet
 string default_error_message
-string default_popup_window_title
-string dropdown_menu
 string in_progress
 string indeterminate
 string navigation_menu
