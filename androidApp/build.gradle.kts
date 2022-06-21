@@ -27,6 +27,7 @@ android {
 
 dependencies {
     implementation(project(":shared:domain"))
+    implementation(libs.io.coil)
     implementation(libs.android.material)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constariantlayout)
