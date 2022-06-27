@@ -24,5 +24,4 @@ val screensModule = module {
             detailScreen = get(named(Screen.DetailScreen.route))
         )
     }
-
 }
