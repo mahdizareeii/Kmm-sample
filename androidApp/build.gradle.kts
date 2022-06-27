@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("kotlin-parcelize")
     kotlin("android")
     kotlin("plugin.serialization")
 }
@@ -41,4 +42,5 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.viewmodel.savedstate)
+    implementation(libs.androidx.navigation.compose)
 }

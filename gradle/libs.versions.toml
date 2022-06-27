@@ -12,6 +12,8 @@ activity_version = "1.4.0"
 compose_version = "1.1.1"
 lifecycle_version = "2.4.1"
 coil_version = "2.1.0"
+mock_version = "4.6.1"
+nav_version = "2.4.2"
 
 [libraries]
 #plugins
@@ -33,6 +35,7 @@ android-material = { module = "com.google.android.material:material", version.re
 #koin
 koin-kotlin-core = { module = "io.insert-koin:koin-core", version.ref = "koin_version" }
 koin-kotlin-android = { module = "io.insert-koin:koin-android", version.ref = "koin_version" }
+koin-kotlin-test = { module = "io.insert-koin:koin-test", version.ref = "koin_version" }
 
 #coroutines
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx_coroutines_version" }
@@ -52,8 +55,12 @@ androidx-compose-material = { module = "androidx.compose.material:material", ver
 androidx-compose-animation = { module = "androidx.compose.animation:animation", version.ref = "compose_version" }
 androidx-compose-uitooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose_version" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle_version" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "nav_version" }
 io-coil = { module = "io.coil-kt:coil-compose", version.ref = "coil_version" }
 
+#others
+org-mockito-core = { module = "org.mockito:mockito-core", version.ref = "mock_version" }
+org-mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mock_version" }
 
 [bundles]
 
